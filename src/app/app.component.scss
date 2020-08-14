@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 10px / 16px default browser font size
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+.mat-tab-label{
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.mat-tab-label-active{
+    background-color: rgba(255, 165, 0, 1);
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff980000;
+}
+
+
+/* todo move to wizzard step css */
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+    @for $i from 0 through 20 {
+
+        #mat-tab-label-#{$i}-0 {
+            min-width: 68px;
+            padding: 1px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-1 {
+            min-width: 68px;
+            padding: 1px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-2 {
+            min-width: 68px;
+            padding: 1px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-3 {
+            min-width: 68px;
+            padding: 1px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-4 {
+            min-width: 68px;
+            padding: 1px;
+            height: 30px;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+    @for $i from 0 through 20 {
+        #mat-tab-label-#{$i}-0 {
+            min-width: 110px;
+            height: 40px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-1 {
+            min-width: 110px;
+            height: 40px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-2 {
+            min-width: 110px;
+            height: 40px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-3 {
+            min-width: 110px;
+            height: 40px;
+            margin-bottom: 3px;
+        }
+
+        #mat-tab-label-#{$i}-4 {
+            min-width: 110px;
+            height: 40px;
+            margin-bottom: 3px;
+        }
+    }
+}

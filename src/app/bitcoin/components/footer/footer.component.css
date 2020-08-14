@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer-content{
+    padding-top: 10px;
+}
+
+
+.social-media-link {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.copyright {
+    font-size: medium;
+}
+
+.price{
+    padding-bottom: 5px;
+}

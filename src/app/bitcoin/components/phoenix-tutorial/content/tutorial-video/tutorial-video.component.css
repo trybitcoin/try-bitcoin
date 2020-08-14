@@ -1,0 +1,43 @@
+.phone-video {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    -moz-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.phone-video-wrapper {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    position: relative;
+}
+
+.phone-case {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+}
+
+.video {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    border-radius: 55px;
+    overflow: hidden;
+    height: 600px;
+    width: 300px;
+    padding: 18px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}

@@ -1,0 +1,91 @@
+.border {
+    border: 1px solid;
+}
+
+.card-header {
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+    margin-bottom: 5px;
+}
+
+.mat-card-title {
+    padding-top: 12px;
+}
+
+.mat-card-content {
+    padding-top: 10px;
+}
+
+.mat-card {
+    margin: 10px auto; /* the auto centers the card*/
+}
+
+.card {
+    max-width: 600px;
+}
+
+.mat-card-actions {
+    text-align: center;
+}
+
+.nav-btn {
+    font-size: 18px;
+    border: 1px solid;
+    min-width: 64px;
+    padding: 1px 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+
+    color: inherit;
+    background: transparent;
+    box-sizing: border-box;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+
+    overflow: visible;
+}
+
+.black {
+    color: black;
+}
+
+
+.orange {
+    color: darkorange;
+}
+
+.tab-icon {
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+.show-video {
+    float: right;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(255, 165, 0, 0.6);
+    color: black;
+    min-width: 36px;
+    line-height: 32px;
+    padding: 0px 6px;
+}
+
+@media only screen and (min-device-width: 480px) {
+    .nav-btn-size {
+        line-height: 36px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .nav-btn-size {
+        line-height: 28px;
+    }
+}
+

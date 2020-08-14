@@ -1,0 +1,65 @@
+.nav {
+    text-align: center;
+}
+
+.nav-animated {
+    text-align: center;
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.heading-animated {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+}
+
+.heading-wrapper {
+    background-color: black;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem)
+    }
+    80% {
+        transform: translateX(1rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem)
+    }
+    80% {
+        transform: translateX(-1rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}

@@ -1,0 +1,21 @@
+.centered {
+    text-align: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+    .youtube-video-iframe {
+        width: 100%;
+        max-width: 420px;
+        height: 315px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+    .youtube-video-iframe {
+        width: 100%;
+        max-width: 560px;
+        height: 400px;
+    }
+}

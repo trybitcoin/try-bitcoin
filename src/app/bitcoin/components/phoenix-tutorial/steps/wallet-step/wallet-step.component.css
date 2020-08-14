@@ -1,0 +1,8 @@
+.centered {
+    text-align: center;
+}
+
+.card-content-header {
+    font: 400 20px/32px Roboto, "Helvetica Neue", sans-serif;
+    margin-bottom: 5px;
+}

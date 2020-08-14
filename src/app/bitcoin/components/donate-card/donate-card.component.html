@@ -1,0 +1,37 @@
+<mat-card class="card">
+    <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>About</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            The donations are used to cover the operational costs of this website and to onboard new bitcoin users.
+        </p>
+        <div class="centered">
+            <div *ngIf="!paymentReceived">
+                <app-qr-code [content]="paymentRequest"></app-qr-code>
+                <div class="donation-request">
+                    <div class="donation-request">
+                        <p class="ln-request">{{paymentRequest}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <app-payment-successful [paymentReceived]="paymentReceived"></app-payment-successful>
+        </div>
+
+
+    </mat-card-content>
+
+    <mat-card-actions >
+        <div *ngIf="!paymentReceived">
+            <button mat-raised-button (click)="copyPaymentRequest()">Copy</button>
+            <a [href]=paymentRequestLink()>
+                <button mat-raised-button class="payment-btn">Open with Wallet</button>
+            </a>
+        </div>
+        <div *ngIf="paymentReceived">
+            <button mat-raised-button (click)="newDonation()">New donation</button>
+        </div>
+    </mat-card-actions>
+</mat-card>

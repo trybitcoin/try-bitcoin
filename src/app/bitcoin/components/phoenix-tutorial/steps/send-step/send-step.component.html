@@ -1,0 +1,40 @@
+<div *ngIf="paymentRequest && !paymentReceived">
+    <div>
+        <p>Now it is time to make your first bitcoin payment.</p>
+        <p>Scan the QR code or click the 'Open with Wallet' button to send 1 satoshi back to try-bitcoin.com</p>
+    </div>
+    <div class="centered">
+        <app-qr-code [content]="paymentRequest"></app-qr-code>
+        <div class="donation-request">
+            <div class="donation-request">
+                <p class="ln-request">{{paymentRequest}}</p>
+            </div>
+        </div>
+        <button mat-raised-button class="payment-btn" (click)="copyPaymentRequest()">Copy</button>
+        <a [href]=paymentRequestLink()>
+            <button mat-raised-button class="payment-btn">Open with Wallet</button>
+        </a>
+    </div>
+</div>
+
+<div *ngIf="paymentRequest && paymentReceived">
+    <p>Congratulations you just did your first bitcoin payment!</p>
+    <p>Check out the following websites that accept bitcoin:</p>
+    <p>Feed chickens and watch them eat at
+        <a href="https://pollofeed.com/" target="_blank" rel="noopener noreferrer">
+            pollofeed.com
+        </a>
+    </p>
+
+    <p>Play some Roulette at
+        <a href="https://lightning-roulette.com/" target="_blank" rel="noopener noreferrer">
+            lightning-roulette.com
+        </a>
+    </p>
+
+    <p>Discover more shops at
+        <a href="https://www.lightningnetworkstores.com/" target="_blank" rel="noopener noreferrer">
+            lightningnetworkstores.com/
+        </a>
+    </p>
+</div>

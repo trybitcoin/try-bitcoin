@@ -1,0 +1,45 @@
+.qr {
+    max-width: 400px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.withdraw-btn {
+    float: right;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.radio-button {
+    margin: 5px;
+}
+
+.captcha {
+    max-width: 200px;
+    border-radius: 2px;
+}
+
+.captcha-code-input {
+    max-width: 200px;
+    padding-left: 10px;
+}
+
+.mat-form-field {
+    display: initial;
+}
+
+.settled-deposit {
+    max-width: 250px;
+    fill: rgba(42, 178, 77, 0.8);
+}
+
+.withdraw-request {
+    margin: 16px;
+    padding-top: 16px;
+}

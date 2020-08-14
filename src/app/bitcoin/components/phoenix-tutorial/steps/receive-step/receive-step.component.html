@@ -1,0 +1,41 @@
+<div *ngIf="!questionsAnswered">
+    <p>Answer the following question & solve the captcha to receive 100 satoshis.</p>
+
+    <label id="seed-radio-group-label">How many words contains the Phoenix wallet recovery seed?</label>
+    <mat-radio-group
+        aria-labelledby="seed-radio-group-label"
+        class="radio-group"
+        [(ngModel)]="seedAnswer">
+        <mat-radio-button class="radio-button" *ngFor="let answer of seedQuestion" [value]="answer">
+            {{answer}}
+        </mat-radio-button>
+    </mat-radio-group>
+
+    <form #f="ngForm" (ngSubmit)="submitCaptcha(f.value)" class="captcha-form">
+        <img class="captcha" src="/api/captcha.jpg" alt="captcha.jpg">
+
+        <mat-form-field class="captcha-code-input" appearance="outline">
+            <mat-label>Captcha</mat-label>
+            <input matInput ngModel name="code" placeholder="Code" onkeyup="this.value = this.value.toLowerCase()">
+            <mat-icon matSuffix>error</mat-icon>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit">Answer Response</button>
+    </form>
+</div>
+
+
+<div *ngIf="questionsAnswered && !paymentReceived">
+    <p>Scan the QR code or click the 'Open with Wallet' button to receive 100 satoshis.</p>
+    <div class="centered">
+        <div class="withdraw-request">
+            <app-qr-code [content]="lnUrl"></app-qr-code>
+            <p></p>
+            <a [href]=withdrawRequestLink()>
+                <button mat-raised-button>Open with Wallet</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<app-payment-successful class="centered" [paymentReceived]="paymentReceived"></app-payment-successful>

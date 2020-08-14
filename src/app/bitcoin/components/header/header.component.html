@@ -1,0 +1,12 @@
+<div class="heading-wrapper" routerLink="/">
+    <div [class]="getHeadingCssClass()">Try Bitcoin</div>
+</div>
+<div [class]="getNavCssClass()">
+    <button id="nav-use-cases" mat-button routerLink="/why">Why?</button>
+
+    <button id="nav-faq" mat-button routerLink="/faq">{{getFaq()}}</button>
+
+    <button id="nav-tips" mat-button routerLink="/tips">Tips</button>
+
+    <button id="nav-about" mat-button routerLink="/about">About</button>
+</div>

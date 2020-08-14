@@ -1,0 +1,21 @@
+<p>Phoenix is a mobile wallet that lets you send and receive bitcoins easily.</p>
+<p>Phoenix is currently only available for android.</p>
+<ol>
+    <li>Click the Google Play button and install the wallet application.</li>
+    <li>Create a new wallet.</li>
+    <li>Write down the recovery seed on a piece of paper.</li>
+    <li>Set a security PIN to protect your wallet.</li>
+    <!--  <mat-icon>android</mat-icon> fiber_new  format_list_numbered fiber_pin-->
+</ol>
+
+<div class="centered">
+    <a [href]=getPlayStoreLink() (click)="onClickAndroid()" target="_blank" rel="noopener noreferrer">
+        <img mat-card-image id="download-btn-android" src="static/assets/img/google-play-badge.png"
+             alt="Google Play" class="pulsate-fwd">
+    </a>
+
+    <p>
+        <img mat-card-image id="download-btn-ios" src="static/assets/img/apple-badge.png" alt="App Store"
+             (click)="onClickIOS()">
+    </p>
+</div>
