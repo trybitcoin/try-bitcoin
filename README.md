@@ -1,1 +1,1 @@
-# try-bitcoin
+# try-bitcoin.com
