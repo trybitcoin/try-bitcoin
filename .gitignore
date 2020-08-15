@@ -3,3 +3,4 @@ dist
 coverage/
 .sass-cache/
 .tmp/
+.idea/
