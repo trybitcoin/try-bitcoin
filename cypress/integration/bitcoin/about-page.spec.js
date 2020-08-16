@@ -1,7 +1,6 @@
 describe('About page', () => {
     beforeEach(() => {
-        cy.visit('https://www.ossel.tech')
-        // cy.visit('http://localhost:4200/');
+        cy.visit('http://localhost:4200/');
     });
 
 
@@ -9,7 +8,6 @@ describe('About page', () => {
         cy.contains('Try Bitcoin');
         cy.get('#nav-about').click();
         cy.contains('About');
-        cy.get('.ln-request').contains('ln');
     })
 
 });
