@@ -36,7 +36,6 @@ import {MatInputModule} from "@angular/material/input";
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { PaymentSuccessfulComponent } from './components/payment-successful/payment-successful.component';
 import { QrCodeComponent } from './components/qr-code/qr-code.component';
-import { TipsComponent } from './pages/tips/tips.component';
 import { HomeButtonComponent } from './components/home-button/home-button.component';
 
 @NgModule({
@@ -80,7 +79,6 @@ import { HomeButtonComponent } from './components/home-button/home-button.compon
         StatisticsComponent,
         PaymentSuccessfulComponent,
         QrCodeComponent,
-        TipsComponent,
         HomeButtonComponent,
     ]
 })

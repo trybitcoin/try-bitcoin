@@ -5,7 +5,6 @@ import {DonateComponent} from "./pages/donate/donate.component";
 import {UseCasesComponent} from "./pages/use-cases/use-cases.component";
 import {FaqComponent} from "./pages/faq/faq.component";
 import {StatisticsComponent} from "./pages/statistics/statistics.component";
-import {TipsComponent} from "./pages/tips/tips.component";
 
 const routes: Routes = [
     {
@@ -23,10 +22,6 @@ const routes: Routes = [
     {
         path: 'faq',
         component: FaqComponent
-    },
-    {
-        path: 'tips',
-        component: TipsComponent
     },
     {
         path: 'about',
