@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
     }
 
     getFaq(): string {
-        return this.scrWidth < 480 ? "FAQ" : "Frequently Asked Questions";
+        return this.scrWidth < 200 ? "FAQ" : "Frequently Asked Questions";
     }
 
 }
