@@ -6,7 +6,7 @@
 ## Install
 
 Prerequisites are [Node.js](https://nodejs.org/en/download) & [git](https://git-scm.com/downloads)
-- git close https://github.com/trybitcoin/try-bitcoin.git
+- git clone https://github.com/trybitcoin/try-bitcoin.git
 - cd try-bitcoin
 - npm install
 - npm start
