@@ -12,5 +12,8 @@ Prerequisites are [Node.js](https://nodejs.org/en/download) & [git](https://git-
 
 Visit http://localhost:4200/ in your browser.
 
+## Features
+- lnurl support
+
 ## Contributing
 Contributions are very welcome. You can send improvement suggestions to try-bitcoin@protonmail.com or open an [issue](https://github.com/trybitcoin/try-bitcoin/issues).
