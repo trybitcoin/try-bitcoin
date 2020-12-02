@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
+    "start:local": "ng serve --proxy-config proxy.conf.local.json",
     "build": "ng build",
     "gzip": "gzipper ./dist",
     "build:prod": "yarn build --prod && yarn gzip",
