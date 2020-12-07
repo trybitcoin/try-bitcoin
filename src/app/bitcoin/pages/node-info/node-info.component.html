@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<mat-card class="card">
+    <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>Lightning Node ⚡</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+        <div class="card-content-header">Connect</div>
+
+        <mat-form-field>
+            <mat-label>Alias</mat-label>
+            <input matInput type="text" readonly="true" [(ngModel)]="alias">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input matInput type="text" readonly="true" [(ngModel)]="address">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Public Key</mat-label>
+            <input matInput type="text" readonly="true" [(ngModel)]="pubKey">
+            <button mat-button matSuffix mat-icon-button aria-label="Copy" (click)="copyConnectionString()">
+                <mat-icon>file_copy</mat-icon>
+            </button>
+        </mat-form-field>
+        <p></p>
+
+        <div class="card-content-header">Payments</div>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">done_outline</mat-icon>
+        {{payments}} payments
+        <br>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">account_balance</mat-icon>
+        {{valueInSats}} sats received
+        <p></p>
+
+        <div class="card-content-header">Routing Fees</div>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">directions_walk</mat-icon>
+        {{dailyFees}} today
+        <br>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">directions_car</mat-icon>
+        {{weeklyFees}} weekly
+        <br>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">directions_boat</mat-icon>
+        {{monthlyFees}} monthly
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <app-home-button></app-home-button>
+    </mat-card-actions>
+</mat-card>
+
+
+<app-footer></app-footer>
