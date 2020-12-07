@@ -5,6 +5,7 @@ import {DonateComponent} from "./pages/donate/donate.component";
 import {UseCasesComponent} from "./pages/use-cases/use-cases.component";
 import {FaqComponent} from "./pages/faq/faq.component";
 import {StatisticsComponent} from "./pages/statistics/statistics.component";
+import {NodeInfoComponent} from "./pages/node-info/node-info.component";
 
 const routes: Routes = [
     {
@@ -30,6 +31,10 @@ const routes: Routes = [
     {
         path: 'stats',
         component: StatisticsComponent
+    },
+    {
+        path: 'connect',
+        component: NodeInfoComponent
     }
 ];
 
